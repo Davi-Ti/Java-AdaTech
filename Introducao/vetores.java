@@ -2,6 +2,27 @@ public class vetores {
 
     public static void main(String[] args) {
 
+        int[] numeros = {10, 20, 30, 40, 50};
+        int maior = numeros[0];
+        int menor = numeros[0];
+        float media = 0;
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+            if (numeros[i] < menor) {
+                menor = numeros[i];
+            }
+            media += numeros[i];
+        }
+
+        media = media / numeros.length;
+
+        System.out.println("Maior: " + maior);
+        System.out.println("Menor: " + menor);
+        System.out.println("Média: " + media);
+
         // int[] numeros = new int[5];
         // numeros[0] = 10;
         // numeros[1] = 20;
