@@ -3,7 +3,7 @@ import java.time.LocalDateTime;
 import java.util.Locale;
 import java.time.format.TextStyle;
 
-public class data {
+public class Data {
 
     public static void main(String[] args) {
         String nome = "Davi";
