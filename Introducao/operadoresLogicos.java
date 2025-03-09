@@ -24,6 +24,10 @@ public class operadoresLogicos {
         // !true = false
         // !false = true
 
+        String mensagem = fimDeSemana ? "É fim de semana!" : "Não é fim de semana!";
+        System.out.println(mensagem);
+
+
 
     }
 }
