@@ -8,9 +8,11 @@ public class Funcoes {
     public static void main(String[] args) {
         String nome = "Davi";
         String diaSemana = Data.diaSemana();
-        String saudacao = Data.saudacao();
+        String saudacao = Data.saudacao(nome, diaSemana);
 
-        System.out.printf("Olá %s, hoje é %s. %s!%n", nome, diaSemana, saudacao);
+        System.out.println(saudacao);
+
+        
     }
 
     public static class Data {
@@ -20,16 +22,20 @@ public class Funcoes {
             return hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
         }
 
-        public static String saudacao() {
+        public static String saudacao( String nome, String diaSemana) {   {
             LocalDateTime agora = LocalDateTime.now();
             int hora = agora.getHour();
+            String saudacao;
             if (hora < 12) {
-                return "Bom dia";
+                saudacao = "Bom dia";
             } else if (hora < 18) {
-                return "Boa tarde";
+                saudacao = "Boa tarde";
             } else {
-                return "Boa noite";
+                saudacao = "Boa noite";
             }
+            
+            return "Olá, " + nome + "! " + saudacao + " hoje é " + diaSemana;
+            
         }
     }
-}
+}}
