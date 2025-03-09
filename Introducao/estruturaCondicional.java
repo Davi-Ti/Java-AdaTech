@@ -23,20 +23,11 @@ public class estruturaCondicional {
         }
 
         switch (graduacao) {
-            case "A":
-                System.out.println("Parabéns!");
-                break;
-            case "B":
-                System.out.println("Quase lá!");
-                break;
-            case "C":
-                System.out.println("Estude mais!");
-                break;
-            case "D":
-                System.out.println("Reprovado!");
-                break;
-            default:
-                System.out.println("Nota inválida!");
+            case "A" -> System.out.println("Parabéns!");
+            case "B" -> System.out.println("Quase lá!");
+            case "C" -> System.out.println("Estude mais!");
+            case "D" -> System.out.println("Reprovado!");
+            default -> System.out.println("Nota inválida!");
         }
 
 
