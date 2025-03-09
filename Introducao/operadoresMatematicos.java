@@ -1,6 +1,4 @@
-package hello.world;
-
-public class Main {
+public class operadoresMatematicos {
     public static void main(String[] args) {
 
         int a;
